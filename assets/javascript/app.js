@@ -1,6 +1,9 @@
 var city ="";
 var state ="";
 
+var city ="";
+var state ="";
+
 var markers;
 
         // grab these from api
