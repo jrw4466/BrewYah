@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 
 var markers;
 
@@ -60,4 +62,6 @@ var markers;
         }
 
  
+
+ })
    
