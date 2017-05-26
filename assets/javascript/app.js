@@ -1,3 +1,5 @@
+var city ="";
+var state ="";
 
 var city ="";
 var state ="";
