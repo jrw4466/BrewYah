@@ -1,3 +1,5 @@
+var city ="";
+var state ="";
 
 var markers;
 
@@ -60,4 +62,3 @@ var markers;
         }
 
  
-   
