@@ -1,8 +1,28 @@
 var city ="";
 var state ="";
 
-var city ="";
-var state ="";
+
+
+function locationInfo() {
+
+    var longitute = "";
+    var ladittude = "";
+
+    var queryURL = "https://api.brewerydb.com/v2/locations/?name&key=52840d61aed0d4d4dc14a975bf3092c4&format=json";
+
+    $.ajax({
+        url: queryURL,
+        methotd: "GET"
+    })
+
+    .done(function(response) {
+
+        console.log(queryURL);
+        console.log(response.data);
+    })
+}
+
+    locationInfo();
 
 var markers;
 
