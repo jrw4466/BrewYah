@@ -1,0 +1,32 @@
+
+<body>
+    breweries page
+
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <script>
+        function getBreweryLocations() {
+            var queryURL = "http://127.0.0.1:8080/breweries";
+
+            $.ajax({
+                url: queryURL,
+                method: "GET",
+                success: function(data) {
+                    console.log(data);
+                },
+                error: function(XMLHttpRequest, textStatus, error) {
+                    console.log(error);
+                }
+            })
+
+
+            // .done(function(response) {
+            //     console.log(queryURL);
+            //     console.log(response.data);
+            // });
+        }
+
+
+        var locations = getBreweryLocations();
+    </script>
+</body>
