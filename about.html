@@ -19,7 +19,7 @@
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -30,6 +30,56 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+.container {
+  position: relative; 
+}
+
+.box {
+  padding-bottom: 20px;
+}
+
+.textarea {
+  padding-top: 30px;
+}
+
+.image {
+  display: block;
+  width: 75%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+</style>
+
   </head>
 
   <body>
@@ -54,7 +104,7 @@
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
-    <div class="container">
+  
 
       <div id="content" class="row row-offcanvas row-offcanvas-right">
     <div class="col-lg-12 col-sm-9">
@@ -63,43 +113,93 @@
             <h1>About Us</h1>
             <p>Learn about the amazing people that created this website!</p>
           </div>
-
+          <div class="container">
           <div class="col-xs-6 col-lg-4">
-              <img src="assets/images/mrmiyagi.jpg" alt="Jake">
-              <h2>Jake</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <img src="assets/images/mrmiyagi.jpg" alt="Jake" class="image">
+              <div class="overlay">
+              <div class="text">Jake</div>
               </div>
-
-          <div class="col-xs-6 col-lg-4">
-              <img src="assets/images/mrmiyagi.jpg" alt="Chris">
-              <h2>Chris</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               </div>
-
-              <div class="col-xs-6 col-lg-4">
-              <img src="assets/images/dominicbradfute.jpg" alt="Dominic">
-              <h2>Sam</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <div class="textarea">
+              <h2>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </h2>
               </div>
-
-              <div class="col-xs-6 col-lg-4">
-              <img src="assets/images/mrmiyagi.jpg" alt="Sam">
-              <h2>Sarah</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              </div>
-
-              <div class="col-xs-6 col-lg-4">
-              <img src="assets/images/mrmiyagi.jpg" alt="Sarah">
-              <h2>Dominic</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              </div>
-
-              <div class="col-xs-6 col-lg-4">
-              <img src="assets/images/mrmiyagi.jpg" alt="Mr Miyagi">
-              <h2>Mr Miyagi</h2>
-              <p>Wax on, Wax off, Wax on, Wax off, Wax on, Wax off, Wax on, Wax off.</p>
               </div>
               
+
+          <div class="container">
+          <div class="box">
+          <div class="col-xs-6 col-lg-4">
+              <img src="assets/images/chris.jpg" alt="Chris" class="image">
+              <div class="overlay">
+              <div class="text">Chris</div>
+              </div>
+              </div>
+              <div class="textarea">
+              <h2>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </h2>
+              </div>
+              </div>
+              </div>
+              
+
+              <div class="container">
+              <div class="box">
+              <div class="col-xs-6 col-lg-4">
+              <img src="assets/images/mrmiyagi.jpg" alt="Sam" class="image">
+              <div class="overlay">
+              <div class="text">Sam</div>
+              </div>
+              </div>
+              <div class="textarea">
+              <h2>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </h2>
+              </div>
+              </div>
+              </div>
+
+              <div class="container">
+              <div class="box">
+              <div class="col-xs-6 col-lg-4">
+              <img src="assets/images/mrmiyagi.jpg" alt="Sarah" class="image">
+              <div class="overlay">
+              <div class="text">Sarah</div>
+              </div>
+              </div>
+              <div class="textarea">
+              <h2>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </h2>
+              </div>
+              </div>
+              </div>
+
+              
+              <div class="container">
+              <div class="box">
+              <div class="col-xs-6 col-lg-4">
+              <img src="assets/images/Dominicbradfute.jpg" alt="Dominic" class="image">
+              <div class="overlay">
+              <div class="text">Dominic</div>
+              </div>
+              </div>
+              <div class="textarea">
+              <h2>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </h2>
+              </div>
+              </div>
+              </div>
+
+
+              <div class="container">
+              <div class="box">
+              <div class="col-xs-6 col-lg-4">
+              <img src="assets/images/mrmiyagi.jpg" alt="Mr Miyagi" class="image">
+              <div class="overlay">
+              <div class="text">Mr. Miyagi</div>
+              
+              </div>
+              </div>
+              <div class="textarea">
+              <h2>Wax on, Wax off, Wax on, Wax off, Wax on, Wax off, Wax on, Wax off.</p>
+              </h2>
+              </div>
+              </div>
+              </div>
 
     
         </div>
