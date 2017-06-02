@@ -9,7 +9,7 @@ app.use(cors());
 app.options('*', cors());
 
 
-var BREW_API_URL = "https://api.brewerydb.com/v2/locations/4XTqCU/?name&key=52840d61aed0d4d4dc14a975bf3092c4&format=json";
+var BREW_API_URL = "https://api.brewerydb.com/v2/locations/?name&key=52840d61aed0d4d4dc14a975bf3092c4&format=json";
 
 
 app.get('/', function(req, res, next) {
