@@ -32,8 +32,3 @@ app.use(express.static(__dirname + '/public'));
 
 server.listen(3000);
 
-var promise = getBreweryLocations();
-        promise.success(function(data) {
-            var data_object = JSON.parse(data);
-            console.log(data_object.data[0]);
-        });
